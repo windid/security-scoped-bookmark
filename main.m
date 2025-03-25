@@ -22,6 +22,7 @@ int main(int argc, const char * argv[]) {
                                     error:&error];
     if (error != nil) {
       NSLog(@"Error creating bookmark data: %@", error);
+      return 2;
     } else {
       // Encode NSData in base64 then convert to NSString.
       NSString* base64data = [[NSString alloc]

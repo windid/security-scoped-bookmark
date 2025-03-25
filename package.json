@@ -1,6 +1,6 @@
 {
   "name": "security-scoped-bookmark",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A native addon for Electron to get securityScopedBookmark for macOS.",
   "main": "index.js",
   "scripts": {

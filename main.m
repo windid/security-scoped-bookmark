@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
                             relativeToURL:nil
                                     error:&error];
     if (error != nil) {
-      return 2;
+      NSLog(@"Error creating bookmark data: %@", error);
     } else {
       // Encode NSData in base64 then convert to NSString.
       NSString* base64data = [[NSString alloc]
